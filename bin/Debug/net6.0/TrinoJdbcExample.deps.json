@@ -1,0 +1,152 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TrinoJdbcExample/1.0.0": {
+        "dependencies": {
+          "J2NET.Runtime.win-x64": "1.4.0",
+          "JDBC.NET.Data": "3.5.10"
+        },
+        "runtime": {
+          "TrinoJdbcExample.dll": {}
+        }
+      },
+      "Google.Protobuf/3.22.3": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.22.3.0",
+            "fileVersion": "3.22.3.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.61.0": {
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.61.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.61.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.61.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.61.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.61.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.61.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.61.0.0"
+          }
+        }
+      },
+      "J2NET/1.3.2": {
+        "runtime": {
+          "lib/netstandard2.1/J2NET.dll": {
+            "assemblyVersion": "1.3.2.0",
+            "fileVersion": "1.3.2.0"
+          }
+        }
+      },
+      "J2NET.Runtime.win-x64/1.4.0": {},
+      "JDBC.NET.Data/3.5.10": {
+        "dependencies": {
+          "Google.Protobuf": "3.22.3",
+          "Grpc.Net.Client": "2.61.0",
+          "J2NET": "1.3.2"
+        },
+        "runtime": {
+          "lib/net6.0/JDBC.NET.Data.dll": {
+            "assemblyVersion": "3.5.10.0",
+            "fileVersion": "3.5.10.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrinoJdbcExample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.22.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uyWJZTS0N3gw35jtm/++1jAJNPkFP92QYdxgiC0yv8vQaOi8gaJZ8PhCnjmN6JbobJcCFPBd0cGkmCh6QYOt6Q==",
+      "path": "google.protobuf/3.22.3",
+      "hashPath": "google.protobuf.3.22.3.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.61.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FFHazRC4SVRpeYzHudZVLTmETfweFaihQZ9xcxbny21MKaz3mmbH8d26bcJ8clCufTYoCxav6nz1moyoxJ+olw==",
+      "path": "grpc.core.api/2.61.0",
+      "hashPath": "grpc.core.api.2.61.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.61.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/H4WMyzoTKVBE31PaCG76c/29YTpBeP8W1Vh9of7ykmi8Iw9SlZTm+8quZ35DzRkORZSV6T8CvYPwCVxJzTUKA==",
+      "path": "grpc.net.client/2.61.0",
+      "hashPath": "grpc.net.client.2.61.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.61.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7htYm01A2GCNFq6iamv1NjPycs0nslsYrDD01VAy71k8aSDISBklGJwH7iXZ+ScHdhz+qE0WVvZYVTFsfMPZzQ==",
+      "path": "grpc.net.common/2.61.0",
+      "hashPath": "grpc.net.common.2.61.0.nupkg.sha512"
+    },
+    "J2NET/1.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5VrRBUELXJ4Ydh25O9Ue4ITqMMSUPTfi/gz1MeT2dOR9BfbrqVjyp9ZRtzPVfF71aEgsmUTjJIGi68Hf2W0HAQ==",
+      "path": "j2net/1.3.2",
+      "hashPath": "j2net.1.3.2.nupkg.sha512"
+    },
+    "J2NET.Runtime.win-x64/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M1FospDFKjUdDJSYKlpgsL5aiROVzc/KBABh1r2FbNIUN9AmN7DBTRTEq6A59cDiYEkIwO+HrbQXcNLDzou0Jg==",
+      "path": "j2net.runtime.win-x64/1.4.0",
+      "hashPath": "j2net.runtime.win-x64.1.4.0.nupkg.sha512"
+    },
+    "JDBC.NET.Data/3.5.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Yiu3yB2t/UUxhsDBkk3YXQW6kGDegpgRboKVe4P4ezZkBxayI6c4VMykakd1O1Q5Edqs/ChAEIIEM6Hg3J7eyQ==",
+      "path": "jdbc.net.data/3.5.10",
+      "hashPath": "jdbc.net.data.3.5.10.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+    }
+  }
+}

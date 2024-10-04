@@ -1,0 +1,712 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Google.Protobuf/3.22.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.61.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.61.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Net.Common": "2.61.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.61.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.61.0"
+        },
+        "compile": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "J2NET/1.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/J2NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/J2NET.dll": {}
+        }
+      },
+      "J2NET.Runtime.win-x64/1.4.0": {
+        "type": "package",
+        "build": {
+          "build/J2NET.Runtime.win-x64.targets": {}
+        }
+      },
+      "JDBC.NET.Data/3.5.10": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.22.3",
+          "Grpc.Net.Client": "2.61.0",
+          "J2NET": "1.3.2"
+        },
+        "compile": {
+          "lib/net6.0/JDBC.NET.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/JDBC.NET.Data.dll": {}
+        },
+        "build": {
+          "build/JDBC.NET.Data.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.22.3": {
+      "sha512": "uyWJZTS0N3gw35jtm/++1jAJNPkFP92QYdxgiC0yv8vQaOi8gaJZ8PhCnjmN6JbobJcCFPBd0cGkmCh6QYOt6Q==",
+      "type": "package",
+      "path": "google.protobuf/3.22.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.22.3.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.Core.Api/2.61.0": {
+      "sha512": "FFHazRC4SVRpeYzHudZVLTmETfweFaihQZ9xcxbny21MKaz3mmbH8d26bcJ8clCufTYoCxav6nz1moyoxJ+olw==",
+      "type": "package",
+      "path": "grpc.core.api/2.61.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.core.api.2.61.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net462/Grpc.Core.Api.dll",
+        "lib/net462/Grpc.Core.Api.pdb",
+        "lib/net462/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml",
+        "lib/netstandard2.1/Grpc.Core.Api.dll",
+        "lib/netstandard2.1/Grpc.Core.Api.pdb",
+        "lib/netstandard2.1/Grpc.Core.Api.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Client/2.61.0": {
+      "sha512": "/H4WMyzoTKVBE31PaCG76c/29YTpBeP8W1Vh9of7ykmi8Iw9SlZTm+8quZ35DzRkORZSV6T8CvYPwCVxJzTUKA==",
+      "type": "package",
+      "path": "grpc.net.client/2.61.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.net.client.2.61.0.nupkg.sha512",
+        "grpc.net.client.nuspec",
+        "lib/net462/Grpc.Net.Client.dll",
+        "lib/net462/Grpc.Net.Client.pdb",
+        "lib/net462/Grpc.Net.Client.xml",
+        "lib/net6.0/Grpc.Net.Client.dll",
+        "lib/net6.0/Grpc.Net.Client.pdb",
+        "lib/net6.0/Grpc.Net.Client.xml",
+        "lib/net7.0/Grpc.Net.Client.dll",
+        "lib/net7.0/Grpc.Net.Client.pdb",
+        "lib/net7.0/Grpc.Net.Client.xml",
+        "lib/net8.0/Grpc.Net.Client.dll",
+        "lib/net8.0/Grpc.Net.Client.pdb",
+        "lib/net8.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.0/Grpc.Net.Client.dll",
+        "lib/netstandard2.0/Grpc.Net.Client.pdb",
+        "lib/netstandard2.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.1/Grpc.Net.Client.dll",
+        "lib/netstandard2.1/Grpc.Net.Client.pdb",
+        "lib/netstandard2.1/Grpc.Net.Client.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Common/2.61.0": {
+      "sha512": "7htYm01A2GCNFq6iamv1NjPycs0nslsYrDD01VAy71k8aSDISBklGJwH7iXZ+ScHdhz+qE0WVvZYVTFsfMPZzQ==",
+      "type": "package",
+      "path": "grpc.net.common/2.61.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.common.2.61.0.nupkg.sha512",
+        "grpc.net.common.nuspec",
+        "lib/net6.0/Grpc.Net.Common.dll",
+        "lib/net6.0/Grpc.Net.Common.pdb",
+        "lib/net6.0/Grpc.Net.Common.xml",
+        "lib/net7.0/Grpc.Net.Common.dll",
+        "lib/net7.0/Grpc.Net.Common.pdb",
+        "lib/net7.0/Grpc.Net.Common.xml",
+        "lib/net8.0/Grpc.Net.Common.dll",
+        "lib/net8.0/Grpc.Net.Common.pdb",
+        "lib/net8.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.0/Grpc.Net.Common.dll",
+        "lib/netstandard2.0/Grpc.Net.Common.pdb",
+        "lib/netstandard2.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.1/Grpc.Net.Common.dll",
+        "lib/netstandard2.1/Grpc.Net.Common.pdb",
+        "lib/netstandard2.1/Grpc.Net.Common.xml",
+        "packageIcon.png"
+      ]
+    },
+    "J2NET/1.3.2": {
+      "sha512": "5VrRBUELXJ4Ydh25O9Ue4ITqMMSUPTfi/gz1MeT2dOR9BfbrqVjyp9ZRtzPVfF71aEgsmUTjJIGi68Hf2W0HAQ==",
+      "type": "package",
+      "path": "j2net/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Logo.jpg",
+        "j2net.1.3.2.nupkg.sha512",
+        "j2net.nuspec",
+        "lib/netstandard2.1/J2NET.dll"
+      ]
+    },
+    "J2NET.Runtime.win-x64/1.4.0": {
+      "sha512": "M1FospDFKjUdDJSYKlpgsL5aiROVzc/KBABh1r2FbNIUN9AmN7DBTRTEq6A59cDiYEkIwO+HrbQXcNLDzou0Jg==",
+      "type": "package",
+      "path": "j2net.runtime.win-x64/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.jpg",
+        "build/J2NET.Runtime.win-x64.targets",
+        "j2net.runtime.win-x64.1.4.0.nupkg.sha512",
+        "j2net.runtime.win-x64.nuspec",
+        "openjre/NOTICE",
+        "openjre/bin/api-ms-win-core-console-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-console-l1-2-0.dll",
+        "openjre/bin/api-ms-win-core-datetime-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-debug-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-errorhandling-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-fibers-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-file-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-file-l1-2-0.dll",
+        "openjre/bin/api-ms-win-core-file-l2-1-0.dll",
+        "openjre/bin/api-ms-win-core-handle-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-heap-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-interlocked-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-libraryloader-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-localization-l1-2-0.dll",
+        "openjre/bin/api-ms-win-core-memory-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-namedpipe-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-processenvironment-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-processthreads-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-processthreads-l1-1-1.dll",
+        "openjre/bin/api-ms-win-core-profile-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-rtlsupport-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-string-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-synch-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-synch-l1-2-0.dll",
+        "openjre/bin/api-ms-win-core-sysinfo-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-timezone-l1-1-0.dll",
+        "openjre/bin/api-ms-win-core-util-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-conio-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-convert-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-environment-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-filesystem-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-heap-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-locale-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-math-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-multibyte-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-private-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-process-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-runtime-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-stdio-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-string-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-time-l1-1-0.dll",
+        "openjre/bin/api-ms-win-crt-utility-l1-1-0.dll",
+        "openjre/bin/awt.dll",
+        "openjre/bin/dt_socket.dll",
+        "openjre/bin/extnet.dll",
+        "openjre/bin/fontmanager.dll",
+        "openjre/bin/freetype.dll",
+        "openjre/bin/instrument.dll",
+        "openjre/bin/j2gss.dll",
+        "openjre/bin/j2pcsc.dll",
+        "openjre/bin/j2pkcs11.dll",
+        "openjre/bin/jaas.dll",
+        "openjre/bin/jabswitch.exe",
+        "openjre/bin/jaccessinspector.exe",
+        "openjre/bin/jaccesswalker.exe",
+        "openjre/bin/java.dll",
+        "openjre/bin/java.exe",
+        "openjre/bin/javaaccessbridge.dll",
+        "openjre/bin/javajpeg.dll",
+        "openjre/bin/javaw.exe",
+        "openjre/bin/jawt.dll",
+        "openjre/bin/jdwp.dll",
+        "openjre/bin/jfr.exe",
+        "openjre/bin/jimage.dll",
+        "openjre/bin/jli.dll",
+        "openjre/bin/jrunscript.exe",
+        "openjre/bin/jsound.dll",
+        "openjre/bin/jsvml.dll",
+        "openjre/bin/jwebserver.exe",
+        "openjre/bin/keytool.exe",
+        "openjre/bin/kinit.exe",
+        "openjre/bin/klist.exe",
+        "openjre/bin/ktab.exe",
+        "openjre/bin/lcms.dll",
+        "openjre/bin/management.dll",
+        "openjre/bin/management_agent.dll",
+        "openjre/bin/management_ext.dll",
+        "openjre/bin/mlib_image.dll",
+        "openjre/bin/msvcp140.dll",
+        "openjre/bin/net.dll",
+        "openjre/bin/nio.dll",
+        "openjre/bin/prefs.dll",
+        "openjre/bin/rmi.dll",
+        "openjre/bin/rmiregistry.exe",
+        "openjre/bin/server/classes.jsa",
+        "openjre/bin/server/classes_nocoops.jsa",
+        "openjre/bin/server/jvm.dll",
+        "openjre/bin/splashscreen.dll",
+        "openjre/bin/sspi_bridge.dll",
+        "openjre/bin/sunmscapi.dll",
+        "openjre/bin/syslookup.dll",
+        "openjre/bin/ucrtbase.dll",
+        "openjre/bin/vcruntime140.dll",
+        "openjre/bin/vcruntime140_1.dll",
+        "openjre/bin/verify.dll",
+        "openjre/bin/w2k_lsa_auth.dll",
+        "openjre/bin/windowsaccessbridge-64.dll",
+        "openjre/bin/zip.dll",
+        "openjre/conf/jaxp.properties",
+        "openjre/conf/logging.properties",
+        "openjre/conf/management/jmxremote.access",
+        "openjre/conf/management/jmxremote.password.template",
+        "openjre/conf/management/management.properties",
+        "openjre/conf/net.properties",
+        "openjre/conf/security/java.policy",
+        "openjre/conf/security/java.security",
+        "openjre/conf/security/policy/README.txt",
+        "openjre/conf/security/policy/limited/default_US_export.policy",
+        "openjre/conf/security/policy/limited/default_local.policy",
+        "openjre/conf/security/policy/limited/exempt_local.policy",
+        "openjre/conf/security/policy/unlimited/default_US_export.policy",
+        "openjre/conf/security/policy/unlimited/default_local.policy",
+        "openjre/conf/sound.properties",
+        "openjre/legal/java.base/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.base/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.base/LICENSE",
+        "openjre/legal/java.base/aes.md",
+        "openjre/legal/java.base/asm.md",
+        "openjre/legal/java.base/c-libutl.md",
+        "openjre/legal/java.base/cldr.md",
+        "openjre/legal/java.base/icu.md",
+        "openjre/legal/java.base/public_suffix.md",
+        "openjre/legal/java.base/siphash.md",
+        "openjre/legal/java.base/unicode.md",
+        "openjre/legal/java.base/wepoll.md",
+        "openjre/legal/java.base/zlib.md",
+        "openjre/legal/java.compiler/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.compiler/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.compiler/LICENSE",
+        "openjre/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.datatransfer/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.datatransfer/LICENSE",
+        "openjre/legal/java.desktop/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.desktop/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.desktop/LICENSE",
+        "openjre/legal/java.desktop/colorimaging.md",
+        "openjre/legal/java.desktop/freetype.md",
+        "openjre/legal/java.desktop/giflib.md",
+        "openjre/legal/java.desktop/harfbuzz.md",
+        "openjre/legal/java.desktop/jpeg.md",
+        "openjre/legal/java.desktop/lcms.md",
+        "openjre/legal/java.desktop/libpng.md",
+        "openjre/legal/java.desktop/mesa3d.md",
+        "openjre/legal/java.instrument/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.instrument/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.instrument/LICENSE",
+        "openjre/legal/java.logging/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.logging/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.logging/LICENSE",
+        "openjre/legal/java.management.rmi/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.management.rmi/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.management.rmi/LICENSE",
+        "openjre/legal/java.management/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.management/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.management/LICENSE",
+        "openjre/legal/java.naming/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.naming/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.naming/LICENSE",
+        "openjre/legal/java.net.http/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.net.http/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.net.http/LICENSE",
+        "openjre/legal/java.prefs/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.prefs/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.prefs/LICENSE",
+        "openjre/legal/java.rmi/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.rmi/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.rmi/LICENSE",
+        "openjre/legal/java.scripting/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.scripting/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.scripting/LICENSE",
+        "openjre/legal/java.se/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.se/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.se/LICENSE",
+        "openjre/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.security.jgss/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.security.jgss/LICENSE",
+        "openjre/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.security.sasl/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.security.sasl/LICENSE",
+        "openjre/legal/java.smartcardio/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.smartcardio/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.smartcardio/LICENSE",
+        "openjre/legal/java.sql.rowset/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.sql.rowset/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.sql.rowset/LICENSE",
+        "openjre/legal/java.sql/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.sql/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.sql/LICENSE",
+        "openjre/legal/java.transaction.xa/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.transaction.xa/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.transaction.xa/LICENSE",
+        "openjre/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.xml.crypto/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.xml.crypto/LICENSE",
+        "openjre/legal/java.xml.crypto/santuario.md",
+        "openjre/legal/java.xml/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/java.xml/ASSEMBLY_EXCEPTION",
+        "openjre/legal/java.xml/LICENSE",
+        "openjre/legal/java.xml/bcel.md",
+        "openjre/legal/java.xml/dom.md",
+        "openjre/legal/java.xml/jcup.md",
+        "openjre/legal/java.xml/xalan.md",
+        "openjre/legal/java.xml/xerces.md",
+        "openjre/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.accessibility/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.accessibility/LICENSE",
+        "openjre/legal/jdk.charsets/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.charsets/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.charsets/LICENSE",
+        "openjre/legal/jdk.crypto.cryptoki/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.crypto.cryptoki/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.crypto.cryptoki/LICENSE",
+        "openjre/legal/jdk.crypto.cryptoki/pkcs11cryptotoken.md",
+        "openjre/legal/jdk.crypto.cryptoki/pkcs11wrapper.md",
+        "openjre/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.crypto.ec/LICENSE",
+        "openjre/legal/jdk.crypto.mscapi/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.crypto.mscapi/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.crypto.mscapi/LICENSE",
+        "openjre/legal/jdk.dynalink/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.dynalink/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.dynalink/LICENSE",
+        "openjre/legal/jdk.dynalink/dynalink.md",
+        "openjre/legal/jdk.httpserver/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.httpserver/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.httpserver/LICENSE",
+        "openjre/legal/jdk.incubator.vector/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.incubator.vector/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.incubator.vector/LICENSE",
+        "openjre/legal/jdk.internal.vm.ci/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.internal.vm.ci/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.internal.vm.ci/LICENSE",
+        "openjre/legal/jdk.internal.vm.compiler.management/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.internal.vm.compiler.management/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.internal.vm.compiler.management/LICENSE",
+        "openjre/legal/jdk.internal.vm.compiler/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.internal.vm.compiler/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.internal.vm.compiler/LICENSE",
+        "openjre/legal/jdk.jdwp.agent/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.jdwp.agent/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.jdwp.agent/LICENSE",
+        "openjre/legal/jdk.jfr/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.jfr/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.jfr/LICENSE",
+        "openjre/legal/jdk.jsobject/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.jsobject/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.jsobject/LICENSE",
+        "openjre/legal/jdk.localedata/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.localedata/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.localedata/LICENSE",
+        "openjre/legal/jdk.localedata/cldr.md",
+        "openjre/legal/jdk.localedata/thaidict.md",
+        "openjre/legal/jdk.management.agent/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.management.agent/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.management.agent/LICENSE",
+        "openjre/legal/jdk.management.jfr/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.management.jfr/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.management.jfr/LICENSE",
+        "openjre/legal/jdk.management/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.management/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.management/LICENSE",
+        "openjre/legal/jdk.naming.dns/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.naming.dns/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.naming.dns/LICENSE",
+        "openjre/legal/jdk.naming.rmi/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.naming.rmi/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.naming.rmi/LICENSE",
+        "openjre/legal/jdk.net/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.net/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.net/LICENSE",
+        "openjre/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.nio.mapmode/LICENSE",
+        "openjre/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.sctp/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.sctp/LICENSE",
+        "openjre/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.security.auth/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.security.auth/LICENSE",
+        "openjre/legal/jdk.security.jgss/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.security.jgss/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.security.jgss/LICENSE",
+        "openjre/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.unsupported/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.unsupported/LICENSE",
+        "openjre/legal/jdk.xml.dom/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.xml.dom/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.xml.dom/LICENSE",
+        "openjre/legal/jdk.zipfs/ADDITIONAL_LICENSE_INFO",
+        "openjre/legal/jdk.zipfs/ASSEMBLY_EXCEPTION",
+        "openjre/legal/jdk.zipfs/LICENSE",
+        "openjre/lib/classlist",
+        "openjre/lib/fontconfig.bfc",
+        "openjre/lib/fontconfig.properties.src",
+        "openjre/lib/jawt.lib",
+        "openjre/lib/jfr/default.jfc",
+        "openjre/lib/jfr/profile.jfc",
+        "openjre/lib/jrt-fs.jar",
+        "openjre/lib/jvm.cfg",
+        "openjre/lib/jvm.lib",
+        "openjre/lib/modules",
+        "openjre/lib/psfont.properties.ja",
+        "openjre/lib/psfontj2d.properties",
+        "openjre/lib/security/blocked.certs",
+        "openjre/lib/security/cacerts",
+        "openjre/lib/security/default.policy",
+        "openjre/lib/security/public_suffix_list.dat",
+        "openjre/lib/tzdb.dat",
+        "openjre/lib/tzmappings",
+        "openjre/release"
+      ]
+    },
+    "JDBC.NET.Data/3.5.10": {
+      "sha512": "Yiu3yB2t/UUxhsDBkk3YXQW6kGDegpgRboKVe4P4ezZkBxayI6c4VMykakd1O1Q5Edqs/ChAEIIEM6Hg3J7eyQ==",
+      "type": "package",
+      "path": "jdbc.net.data/3.5.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Logo.jpg",
+        "bridge/JDBC.NET.Bridge-1.0-SNAPSHOT-jar-with-dependencies.jar",
+        "build/JDBC.NET.Data.targets",
+        "jdbc.net.data.3.5.10.nupkg.sha512",
+        "jdbc.net.data.nuspec",
+        "lib/net6.0/JDBC.NET.Data.dll",
+        "lib/netstandard2.1/JDBC.NET.Data.dll"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "sha512": "/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "build/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "J2NET.Runtime.win-x64 >= 1.4.0",
+      "JDBC.NET.Data >= 3.5.10"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nhanct\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\nhanct\\source\\repos\\ConsoleApp1\\TrinoJdbcExample.csproj",
+      "projectName": "TrinoJdbcExample",
+      "projectPath": "C:\\Users\\nhanct\\source\\repos\\ConsoleApp1\\TrinoJdbcExample.csproj",
+      "packagesPath": "C:\\Users\\nhanct\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nhanct\\source\\repos\\ConsoleApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\nhanct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "J2NET.Runtime.win-x64": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
+          "JDBC.NET.Data": {
+            "target": "Package",
+            "version": "[3.5.10, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

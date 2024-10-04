@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RuntimeVersion>1.4.0</RuntimeVersion>
+		<OSPlatform Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">Windows</OSPlatform>
+		<OSArchitecture>$([System.Runtime.InteropServices.RuntimeInformation]::ProcessArchitecture)</OSArchitecture>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- JDBC.NET.Data for JDBC interaction -->
+		<PackageReference Include="JDBC.NET.Data" Version="3.5.10" />
+
+		<!-- IKVM for Java integration -->
+
+		<!-- J2NET Runtime for Windows 64-bit -->
+		<PackageReference Condition=" '$(OSPlatform)' == 'Windows' And '$(OSArchitecture)' == 'X64' " Include="J2NET.Runtime.win-x64" Version="$(RuntimeVersion)" />
+	</ItemGroup>
+
+</Project>
