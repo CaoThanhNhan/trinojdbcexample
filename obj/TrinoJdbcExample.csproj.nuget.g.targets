@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)jdbc.net.data\3.5.10\build\JDBC.NET.Data.targets" Condition="Exists('$(NuGetPackageRoot)jdbc.net.data\3.5.10\build\JDBC.NET.Data.targets')" />
-    <Import Project="$(NuGetPackageRoot)j2net.runtime.win-x64\1.4.0\build\J2NET.Runtime.win-x64.targets" Condition="Exists('$(NuGetPackageRoot)j2net.runtime.win-x64\1.4.0\build\J2NET.Runtime.win-x64.targets')" />
-  </ImportGroup>
-</Project>
